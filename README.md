@@ -41,7 +41,7 @@ The Decorator Pattern finds application in various areas in the real world:
 - **Graphical user interfaces**: In graphical libraries where visual components can be decorated with various visual effects without altering the core component.
 - **Logging systems**: In software systems where logging can be added to different components via decorators without changing their core functionality.
 
-## UML Class Structure Diagram
+## 3. UML Class Structure Diagram
 ![UML Diagram](main_diagram.png)
 
 ## Project Description and Classes
