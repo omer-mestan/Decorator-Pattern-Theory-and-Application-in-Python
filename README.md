@@ -1,6 +1,6 @@
 # Decorator Pattern: Theory and Application in Python
 
-## Introduction
+## 1. Introduction
 In modern software engineering, design patterns play a key role in building flexible and extensible systems. One of these structural patterns is the Decorator Pattern, which allows new responsibilities to be added to objects dynamically without altering their basic structure. This is achieved by using composition instead of inheritance, providing greater flexibility in extending the functionality of objects at runtime.
 
 The Decorator Pattern, also known as the "Wrapper," offers the following advantages:
