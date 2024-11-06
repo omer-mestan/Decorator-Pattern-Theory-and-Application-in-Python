@@ -44,7 +44,7 @@ The Decorator Pattern finds application in various areas in the real world:
 ## 3. UML Class Structure Diagram
 ![UML Diagram](main_diagram.png)
 
-## Project Description and Classes
+## 4. Project Description and Classes
 
 This project demonstrates the application of the Decorator Pattern to dynamically extend the functionality of user profiles in a social network. The main idea is to create a basic profile with core features and, through decorators, add additional functionalities such as photo sharing, story sharing, and live streaming.
 
