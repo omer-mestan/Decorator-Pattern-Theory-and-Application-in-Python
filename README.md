@@ -27,7 +27,6 @@ The Decorator Pattern uses composition instead of inheritance to extend the func
 ### 2.4. Disadvantages of the Decorator Pattern
 - **Code Complexity**: Multiple decorators can lead to more complex and harder-to-track code, especially if misused.
 - **Debugging Difficulty**: Due to the multiple layers of decorators, tracking errors can be more challenging.
-## Theoretical Framework
 
 ### 2.5. When to Use the Decorator Pattern
 The Decorator Pattern is especially useful in the following cases:
