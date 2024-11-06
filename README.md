@@ -50,11 +50,11 @@ This project demonstrates the application of the Decorator Pattern to dynamicall
 
 ### 4.1. Defining an Abstract Class for User Profiles
 
-We start by defining an abstract class `UserProfile`, which contains two abstract methods:
-- `get_features()`: Returns a list of the profile's features.
-- `cost()`: Returns the cost of the profile.
+We start by defining an abstract class UserProfile, which contains two abstract methods:
+- get_features(): Returns a list of the profile's features.
+- cost(): Returns the cost of the profile.
 
-```python
+python
 from abc import ABC, abstractmethod
 
 # Abstract class for user profile
@@ -70,8 +70,7 @@ class UserProfile(ABC):
 ### 4.2. Creating a Basic Profile with Core Features
 
 After defining the abstract class, we create the `BasicProfile` class, which inherits from `UserProfile` and implements the basic functionalities of a profile:
-
-```python
+python
 class BasicProfile(UserProfile):
     def get_features(self):
         return "Basic Profile Features: Text Posts, Comments, Likes"
@@ -81,9 +80,9 @@ class BasicProfile(UserProfile):
 
 ### 4.3. Defining an Abstract Decorator
 
-We define an abstract class `ProfileDecorator`, which also inherits from `UserProfile` and serves as the base class for all concrete decorators. It accepts an object of type `UserProfile` and stores it in `_user_profile`:
+We define an abstract class ProfileDecorator, which also inherits from UserProfile and serves as the base class for all concrete decorators. It accepts an object of type UserProfile and stores it in _user_profile:
 
-```python
+python
 # Abstract decorator
 class ProfileDecorator(UserProfile):
     def __init__(self, user_profile):
@@ -99,8 +98,7 @@ We create three concrete decorators that add new features to the profile:
 
 #### PhotoSharing
 The `PhotoSharing` decorator adds the photo-sharing feature to the profile and increases the cost by 5 currency units.
-
-```python
+python
 # Decorator for adding photo sharing functionality
 class PhotoSharing(ProfileDecorator):
     def get_features(self):
@@ -110,9 +108,9 @@ class PhotoSharing(ProfileDecorator):
         return self._user_profile.cost() + 5  # Additional cost for photo sharing
 
 #### StorySharing
-The `StorySharing` decorator adds the story-sharing feature to the profile and increases the cost by 3 currency units.
+The StorySharing decorator adds the story-sharing feature to the profile and increases the cost by 3 currency units.
 
-```python
+python
 # Decorator for adding story sharing functionality
 class StorySharing(ProfileDecorator):
     def get_features(self):
@@ -123,8 +121,7 @@ class StorySharing(ProfileDecorator):
 
 #### LiveStreaming
 The `LiveStreaming` decorator adds the live streaming feature to the profile and increases the cost by 10 currency units.
-
-```python
+python
 # Decorator for adding live streaming functionality
 class LiveStreaming(ProfileDecorator):
     def get_features(self):
@@ -137,7 +134,7 @@ class LiveStreaming(ProfileDecorator):
 
 Now, we will create a basic profile and extend it with several profiles using the decorators we have defined.
 
-```python
+python
 if __name__ == "__main__":
     # Create a basic profile
     basic_profile = BasicProfile()
@@ -158,8 +155,7 @@ if __name__ == "__main__":
 ### 5. Execution Result
 
 The following output demonstrates the results of executing the program with various decorator combinations:
-
-```plaintext
+plaintext
 Basic Profile Features: Text Posts, Comments, Likes - Cost: $0
 Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing - Cost: $5
 Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing - Cost: $8
