@@ -8,7 +8,7 @@ The Decorator Pattern, also known as the "Wrapper," offers the following advanta
 - **Extensibility**: Simplifies functionality extension by creating new classes rather than modifying existing ones.
 - **Code Simplicity**: Enables building a sequence of functionalities through combining decorators rather than implementing all behaviors in a single object.
 
-## Theoretical Framework
+## 2. Theoretical Framework
 ### 2.1. Key Components of the Decorator Pattern
 The Decorator Pattern consists of the following key elements:
 - **Component**: An abstract class or interface that defines the common interface for objects that can be decorated.
