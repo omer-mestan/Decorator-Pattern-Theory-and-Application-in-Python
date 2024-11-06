@@ -152,20 +152,10 @@ if __name__ == "__main__":
     full_profile = LiveStreaming(StorySharing(PhotoSharing(basic_profile)))
     print("{} - Cost: ${}".format(full_profile.get_features(), full_profile.cost()))
 
-### 5. Execution Result
-
-The following output demonstrates the results of executing the program with various decorator combinations:
-
-```plaintext
-Basic Profile Features: Text Posts, Comments, Likes - Cost: 0 лв.
-Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing - Cost: 5 лв.
-Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing - Cost: 8 лв.
-Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing, Live Streaming - Cost: 18 лв.
-
 
 This example demonstrates how, with the help of the Decorator Pattern, we can flexibly extend the functionality of objects without changing their core structure. This approach is especially useful in systems like social networks, where users can select different combinations of features according to their needs.
 
-### 6. Conclusion
+### 5. Conclusion
 
 In this project, we explored the application of the Decorator Pattern to dynamically extend the functionality of user profiles in a social network. By using this pattern, we were able to add new features such as photo sharing, story sharing, and live streaming without modifying the core structure of the base profile.
 
@@ -176,10 +166,19 @@ The main advantages of the Decorator Pattern highlighted in this project include
 
 Despite these advantages, it should be noted that excessive use of decorators can lead to increased code complexity and debugging difficulties. Therefore, it is essential to apply this pattern judiciously and only when truly necessary.
 
-### 7. References
+### 6. References
 
 - Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley.
 - Freeman, E., & Robson, E. (2004). *Head First Design Patterns*. O'Reilly Media.
 - Refactoring.Guru: [Decorator Pattern](https://refactoring.guru/design-patterns/decorator)
 - GeeksforGeeks: [Decorator Design Pattern in Java with Example](https://www.geeksforgeeks.org/decorator-design-pattern-in-java-with-example/)
 - Baeldung: [The Decorator Pattern in Java](https://www.baeldung.com/java-decorator-pattern)
+
+### 7. Execution Result
+
+```plaintext
+Basic Profile Features: Text Posts, Comments, Likes - Cost: $0
+Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing - Cost: $5
+Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing - Cost: $8
+Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing, Live Streaming - Cost: $18
+
