@@ -155,11 +155,13 @@ if __name__ == "__main__":
 ### 5. Execution Result
 
 The following output demonstrates the results of executing the program with various decorator combinations:
-plaintext
-Basic Profile Features: Text Posts, Comments, Likes - Cost: $0
-Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing - Cost: $5
-Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing - Cost: $8
-Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing, Live Streaming - Cost: $18
+
+```plaintext
+Basic Profile Features: Text Posts, Comments, Likes - Cost: 0 лв.
+Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing - Cost: 5 лв.
+Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing - Cost: 8 лв.
+Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing, Live Streaming - Cost: 18 лв.
+
 
 This example demonstrates how, with the help of the Decorator Pattern, we can flexibly extend the functionality of objects without changing their core structure. This approach is especially useful in systems like social networks, where users can select different combinations of features according to their needs.
 
