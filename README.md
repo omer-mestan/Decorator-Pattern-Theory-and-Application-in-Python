@@ -1,4 +1,5 @@
 # Decorator Pattern: Theory and Application in Python
+![UML Diagram](main_diagram.png)
 
 ## Introduction
 In modern software engineering, design patterns play a key role in building flexible and extensible systems. One of these structural patterns is the Decorator Pattern, which allows new responsibilities to be added to objects dynamically without altering their basic structure. This is achieved by using composition instead of inheritance, providing greater flexibility in extending the functionality of objects at runtime.
