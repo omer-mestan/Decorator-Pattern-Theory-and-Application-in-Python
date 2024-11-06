@@ -58,7 +58,8 @@ python
 from abc import ABC, abstractmethod
 
 # Abstract class for user profile
-class UserProfile(ABC):
+
+    class UserProfile(ABC):
     @abstractmethod
     def get_features(self):
         pass
