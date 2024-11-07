@@ -108,7 +108,7 @@ class PhotoSharing(ProfileDecorator):
         return self._user_profile.cost() + 5  # Additional cost for photo sharing
 ```
 #### StorySharing
-The StorySharing decorator adds the story-sharing feature to the profile and increases the cost by 3 currency units.
+The `StorySharing` decorator adds the story-sharing feature to the profile and increases the cost by 3 currency units.
 
 
 - Decorator for adding story sharing functionality
