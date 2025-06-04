@@ -183,4 +183,4 @@ Basic Profile Features: Text Posts, Comments, Likes - Cost: $0
 Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing - Cost: $5
 Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing - Cost: $8
 Basic Profile Features: Text Posts, Comments, Likes, Photo Sharing, Story Sharing, Live Streaming - Cost: $18
-
+```
